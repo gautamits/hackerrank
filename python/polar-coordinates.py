@@ -1,0 +1,1 @@
+from cmath import polar; print('\n'.join(map(str, polar(complex(input())))))
