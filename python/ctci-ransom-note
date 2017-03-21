@@ -1,0 +1,35 @@
+def ransom_note(magazine, ransom):
+    mag={}
+    #magazine=magazine.split(" ")
+    for i in magazine:
+        if i in mag:
+            mag[i]=mag[i]+1
+        else:
+            mag[i]=1
+    ran={}
+    #ransom=ransom.split(" ")
+    for i in ransom:
+        if i in ran:
+            ran[i]=ran[i]+1
+        else:
+            ran[i]=1
+    for i in ran.keys():
+        try:
+            if ran[i] <= mag[i]:
+                continue
+            else:
+                return False
+        except:
+            return False
+    return True
+
+m, n = map(int, raw_input().strip().split(' '))
+magazine = raw_input().strip().split(' ')
+ransom = raw_input().strip().split(' ')
+answer = ransom_note(magazine, ransom)
+if(answer):
+    print "Yes"
+else:
+    print "No"
+    
+
