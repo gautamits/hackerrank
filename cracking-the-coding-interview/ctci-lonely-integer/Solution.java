@@ -16,5 +16,6 @@ public class Solution {
         int first=a[0];
         for(int i=1;i<n;i++) first=first^a[i];
         System.out.println(first);
+    
     }
 }
