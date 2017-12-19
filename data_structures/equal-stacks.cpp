@@ -28,6 +28,6 @@ int main(){
 	}
 	if(i<0 || j<0 || k<0) cout<<"0\n";
 	else if(arr1[i]==arr2[j] && arr2[j]|| arr3[k]) cout<<arr1[i]<<endl;
-	else cout<<"0"<<endl;
+	else cout<<<<endl;
 
 }
